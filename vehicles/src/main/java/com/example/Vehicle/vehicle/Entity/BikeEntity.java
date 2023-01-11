@@ -1,12 +1,15 @@
 package com.example.Vehicle.vehicle.Entity;
 
 import jakarta.persistence.*;
+import org.springframework.context.annotation.EnableMBeanExport;
 
 @Entity
 @Table(name = "bikes")
 public class BikeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
     @Column(name = "RegisterNo")
     private Long registerNo;
     @Column(name = "ModelName")
@@ -22,6 +25,13 @@ public class BikeEntity {
     @Column(name = "YearOfBuy")
     private String yearOfBuy;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public Long getRegisterNo() {
         return registerNo;

@@ -1,28 +1,29 @@
 package com.example.Vehicle.vehicle.Entity;
 
 import jakarta.persistence.*;
-
+import lombok.Data;
+@Data
 @Entity
-@Table(name = "Car-details")
+@Table(name = "cardetails")
 public class CarEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @Column(name = "RegisterNo")
-    private String registerno;
+    @Column(name = "Registerno")
+    private String Registerno;
     @Column(name = "Model")
-    private String model;
-    @Column(name = "OwnerName")
-    private String ownername;
+    private String Model;
+    @Column(name = "Ownername")
+    private String Ownername;
     @Column(name = "Address")
-    private String address;
+    private String Address;
     @Column(name = "Email")
-    private String email;
-    @Column(name = "PhoneNo")
-    private Long phoneno;
-    @Column(name = "YearOfBuy")
-    private String yearofbuy;
+    private String Email;
+    @Column(name = "Phoneno")
+    private Long Phoneno;
+    @Column(name = "Yearofbuy")
+    private String Yearofbuy;
 
     public Long getId() {
         return id;
@@ -33,58 +34,58 @@ public class CarEntity {
     }
 
     public String getRegisterno() {
-        return registerno;
+        return Registerno;
     }
 
     public void setRegisterno(String registerno) {
-        this.registerno = registerno;
+        this.Registerno = registerno;
     }
 
     public String getModel() {
-        return model;
+        return Model;
     }
 
     public void setModel(String model) {
-        this.model = model;
+        this.Model = model;
     }
 
     public String getOwnername() {
-        return ownername;
+        return Ownername;
     }
 
     public void setOwnername(String ownername) {
-        this.ownername = ownername;
+        this.Ownername = ownername;
     }
 
     public String getAddress() {
-        return address;
+        return Address;
     }
 
     public void setAddress(String address) {
-        this.address = address;
+        this.Address = address;
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        this.Email = email;
     }
 
     public Long getPhoneno() {
-        return phoneno;
+        return Phoneno;
     }
 
     public void setPhoneno(Long phoneno) {
-        this.phoneno = phoneno;
+        this.Phoneno = phoneno;
     }
 
     public String getYearofbuy() {
-        return yearofbuy;
+        return Yearofbuy;
     }
 
     public void setYearofbuy(String yearofbuy) {
-        this.yearofbuy = yearofbuy;
+        this.Yearofbuy = yearofbuy;
     }
 }

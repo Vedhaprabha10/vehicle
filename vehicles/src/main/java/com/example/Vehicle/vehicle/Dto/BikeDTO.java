@@ -1,6 +1,7 @@
 package com.example.Vehicle.vehicle.Dto;
 
 public class BikeDTO {
+    private Long id;
     private Long registerNo;
     private String modelName;
     private String ownerName;
@@ -9,6 +10,13 @@ public class BikeDTO {
     private Long phoneNo;
     private String yearOfBuy;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getModelName() {
         return modelName;

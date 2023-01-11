@@ -2,13 +2,13 @@ package com.example.Vehicle.vehicle.Dto;
 
 public class CarDTO {
     private Long id;
-    private String registerNo;
+    private String registerno;
     private String model;
-    private String ownerName;
+    private String ownername;
     private String address;
     private String email;
-    private Long phoneNo;
-    private String yearOfBuy;
+    private Long phoneno;
+    private String yearofbuy;
 
     public Long getId() {
         return id;
@@ -18,12 +18,12 @@ public class CarDTO {
         this.id = id;
     }
 
-    public String getRegisterNo() {
-        return registerNo;
+    public String getRegisterno() {
+        return registerno;
     }
 
-    public void setRegisterNo(String registerNo) {
-        this.registerNo = registerNo;
+    public void setRegisterno(String registerno) {
+        this.registerno = registerno;
     }
 
     public String getModel() {
@@ -34,12 +34,12 @@ public class CarDTO {
         this.model = model;
     }
 
-    public String getOwnerName() {
-        return ownerName;
+    public String getOwnername() {
+        return ownername;
     }
 
-    public void setOwnerName(String ownerName) {
-        this.ownerName = ownerName;
+    public void setOwnername(String ownername) {
+        this.ownername = ownername;
     }
 
     public String getAddress() {
@@ -58,19 +58,23 @@ public class CarDTO {
         this.email = email;
     }
 
-    public Long getPhoneNo() {
-        return phoneNo;
+    public Long getPhoneno() {
+        return phoneno;
     }
 
-    public void setPhoneNo(Long phoneNo) {
-        this.phoneNo = phoneNo;
+    public void setPhoneno(Long phoneno) {
+        this.phoneno = phoneno;
     }
 
-    public String getYearOfBuy() {
-        return yearOfBuy;
+    public String getYearofbuy() {
+        return yearofbuy;
     }
 
-    public void setYearOfBuy(String yearOfBuy) {
-        this.yearOfBuy = yearOfBuy;
+    public void setYearofbuy(String yearofbuy) {
+        this.yearofbuy = yearofbuy;
     }
+
+
+
 }
+
