@@ -6,8 +6,7 @@ import com.example.Vehicle.vehicle.Repository.BikeRepository;
 import com.example.Vehicle.vehicle.Service.BikeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
+
 
 import java.util.List;
 
@@ -15,8 +14,7 @@ import java.util.List;
 public class BikeServiceImpl implements BikeService {
     @Autowired
     BikeRepository repository;
-    @Autowired
-    BikeService bikeService;
+
     @Override
     public BikeEntity saveBike(BikeDTO bikeDTO) {
         BikeEntity bikeEntity1 = new BikeEntity();
@@ -40,16 +38,16 @@ public class BikeServiceImpl implements BikeService {
     repository.deleteById(id);
     }
 
-//    @Override
-//    public BikeEntity updates(BikeDTO bikeDTO) {
-//        BikeEntity updateData = new BikeEntity();
-//        updateData.setRegisterNo(bikeDTO.getRegisterNo());
-//        updateData.setModelName(bikeDTO.getModelName());
-//        updateData.setOwnerName(bikeDTO.getOwnerName());
-//        updateData.setAddress(bikeDTO.getAddress());
-//        updateData.setEmail(bikeDTO.getEmail());
-//        updateData.setPhoneNo(bikeDTO.getPhoneNo());
-//        updateData.setYearOfBuy(bikeDTO.getYearOfBuy());
-//       return repository.save(updateData);
-//    }
+    @Override
+    public BikeEntity updates(BikeDTO bikeDTO) {
+        BikeEntity updateData = new BikeEntity();
+        updateData.setRegisterNo(bikeDTO.getRegisterNo());
+        updateData.setModelName(bikeDTO.getModelName());
+        updateData.setOwnerName(bikeDTO.getOwnerName());
+        updateData.setAddress(bikeDTO.getAddress());
+        updateData.setEmail(bikeDTO.getEmail());
+        updateData.setPhoneNo(bikeDTO.getPhoneNo());
+        updateData.setYearOfBuy(bikeDTO.getYearOfBuy());
+       return repository.save(updateData);
+    }
 }

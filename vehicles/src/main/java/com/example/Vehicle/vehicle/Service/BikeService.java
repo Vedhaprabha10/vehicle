@@ -12,6 +12,6 @@ public interface BikeService {
 
     void deleteById(Long id);
 
-//    BikeEntity updates(BikeDTO bikeDTO);
+    BikeEntity updates(BikeDTO bikeDTO);
 
 }
